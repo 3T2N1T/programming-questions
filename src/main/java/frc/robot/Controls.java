@@ -46,7 +46,7 @@ public final class Controls {
    * Change actuating (moving) double solenoid from A button to B button
    */
  
-  private final JoystickButton aButton = new JoystickButton(driveJoystick, Buttons.a);
+  private final JoystickButton aButton = new JoystickButton(driveJoystick, Buttons.b);
 
   public Controls() {
     aButton.whenPressed(new MoveDoubleSolenoid(Robot.pneumaticsSubsystem.solenoid, Value.kForward));
