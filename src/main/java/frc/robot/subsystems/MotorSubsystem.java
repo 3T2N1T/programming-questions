@@ -51,16 +51,8 @@ public class MotorSubsystem extends Subsystem {
    * Task 4
    * Change the differential drivetrain to a mecanum drivetrain
    */
-  public final DifferentialDrive drive = new DifferentialDrive(leftMotorControllers, rightMotorControllers);
+  public final MecanumDrive drive = new MecanumDrive(frontLeft, backLeft, frontRight, backRight );
 
-  public MotorSubsystem() {
-    ShuffleboardUtil
-      .tab
-        .add("Differential Drive Train", drive)
-        .withSize(4, 2)
-        .withPosition(0, 0)
-        .withWidget(BuiltInWidgets.kDifferentialDrive);
-  }
 
   // Put methods for controlling this subsystem
   // here. Call these from Commands.
